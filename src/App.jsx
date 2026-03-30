@@ -28,7 +28,6 @@ const App = () => {
   // usercount
   // card
   const [activeTab, setActiveTab] = useState("model");
-  console.log(activeTab);
   const [carts, setCarts] = useState([]);
   // card
 
@@ -51,7 +50,7 @@ const App = () => {
           type="radio"
           name="my_tabs_1"
           className="tab rounded-full w-40"
-          aria-label="Cart"
+          aria-label={`Cart (${carts.length})`}
           onClick={() => setActiveTab("cart")}
         />
       </div>
@@ -62,7 +61,7 @@ const App = () => {
           setCarts={setCarts}
         />
       )}
-      {activeTab === "cart" && <Card carts={carts} />}
+      {activeTab === "cart" && <Card carts={carts} setCarts={setCarts} />}
     </>
   );
 };

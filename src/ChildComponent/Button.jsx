@@ -1,11 +1,11 @@
-import React from 'react'
+import React from "react";
 
 const Button = () => {
   return (
     <div>
       <button className="btn btn-outline">Button</button>
     </div>
-  )
-}
+  );
+};
 
-export default Button
+export default Button;

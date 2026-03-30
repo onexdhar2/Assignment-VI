@@ -1,10 +1,12 @@
 import React, { useState } from "react";
+import { toast } from "react-toastify";
 
 const ToolCard = ({ tool, toolIndex, carts, setCarts }) => {
   const [isBuy, setIsBuy] = useState(false);
   const handleSetIsBuy = () => {
     setIsBuy(true);
     setCarts([...carts, tool]);
+    toast.success("Item Added To Card")
   };
   return (
     <div>
