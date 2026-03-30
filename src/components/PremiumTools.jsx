@@ -20,7 +20,7 @@ const PremiumTools = ({ getTools }) => {
       </div>
       <div className=" grid grid-cols-3">
         {tools.map((tool, toolIndex) => (
-          <ToolCard tool={tool}toolIndex={toolIndex}/>
+          <ToolCard tool={tool}key={toolIndex}/>
         ))}
       </div>
     </section>

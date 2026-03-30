@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Navbar from "./components/Navbar";
 import Banner from "./components/Banner";
 import UserCounts from "./components/UserCounts";
@@ -12,7 +12,13 @@ const getTools = async () => {
 };
 const getModelTools = getTools();
 // premium
+
+// ......................................................................
 const App = () => {
+  // card
+  const [activeTab, setActiveTab] = useState("model");
+  console.log(activeTab);
+  // card
   // navItems
   const navItems = ["Products", "Features", "Pricing", "Testimonials", "FAQ"];
   // navItems
@@ -30,8 +36,26 @@ const App = () => {
       <Navbar items={navItems} />
       <Banner />
       <UserCounts userCounts={userCounts} />
-      <PremiumTools getTools={getModelTools} />
-      <Card/>
+      {/* name of each tab group should be unique */}
+      <div className="tabs tabs-box justify-center bg-transparent">
+        <input
+          type="radio"
+          name="my_tabs_1"
+          className="tab rounded-full w-40"
+          aria-label="Products"
+          defaultChecked
+          onClick={() => setActiveTab("model")}
+        />
+        <input
+          type="radio"
+          name="my_tabs_1"
+          className="tab rounded-full w-40"
+          aria-label="Cart"
+          onClick={() => setActiveTab("cart")}
+        />
+      </div>
+      {activeTab === "model" && <PremiumTools getTools={getModelTools} />}
+      {activeTab === "cart" && <Card />}
     </>
   );
 };
