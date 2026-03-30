@@ -1,0 +1,130 @@
+[
+  {
+    "id": 1,
+    "name": "ChatGPT Pro",
+    "description": "Advanced AI chatbot for writing, coding, and problem-solving with enhanced capabilities.",
+    "price": 20,
+    "period": "monthly",
+    "tag": "popular",
+    "tagType": "popular",
+    "features": [
+      "Advanced language understanding",
+      "Code generation",
+      "Conversation memory",
+      "Multi-language support"
+    ],
+    "icon": "https://www.vecteezy.com/free-png/chatgpt-icon"
+  },
+  {
+    "id": 2,
+    "name": "Midjourney",
+    "description": "AI tool for generating high-quality images from text prompts.",
+    "price": 10,
+    "period": "monthly",
+    "tag": "best seller",
+    "tagType": "best seller",
+    "features": [
+      "Text-to-image generation",
+      "High-resolution output",
+      "Creative styles",
+      "Discord integration"
+    ],
+    "icon": "midjourney-icon.png"
+  },
+  {
+    "id": 3,
+    "name": "Grammarly AI",
+    "description": "AI-powered writing assistant for grammar correction and content improvement.",
+    "price": 12,
+    "period": "monthly",
+    "tag": "popular",
+    "tagType": "popular",
+    "features": [
+      "Grammar correction",
+      "Tone detection",
+      "Plagiarism checker",
+      "Writing suggestions"
+    ],
+    "icon": "grammarly-icon.png"
+  },
+  {
+    "id": 4,
+    "name": "Notion AI",
+    "description": "Smart productivity tool with AI features for note-taking and task management.",
+    "price": 8,
+    "period": "monthly",
+    "tag": "new",
+    "tagType": "new",
+    "features": [
+      "AI writing assistant",
+      "Task automation",
+      "Notes organization",
+      "Team collaboration"
+    ],
+    "icon": "notion-icon.png"
+  },
+  {
+    "id": 5,
+    "name": "Copy.ai",
+    "description": "AI copywriting tool for marketing content, blogs, and social media.",
+    "price": 36,
+    "period": "monthly",
+    "tag": "best seller",
+    "tagType": "best seller",
+    "features": [
+      "Marketing templates",
+      "Blog generation",
+      "Social media content",
+      "Email writing"
+    ],
+    "icon": "copyai-icon.png"
+  },
+  {
+    "id": 6,
+    "name": "Runway ML",
+    "description": "AI-powered video editing and content creation platform.",
+    "price": 15,
+    "period": "monthly",
+    "tag": "new",
+    "tagType": "new",
+    "features": [
+      "Video generation",
+      "Background removal",
+      "AI editing tools",
+      "Real-time collaboration"
+    ],
+    "icon": "runway-icon.png"
+  },
+  {
+    "id": 7,
+    "name": "Jasper AI",
+    "description": "AI content platform for creating marketing copy and long-form articles.",
+    "price": 49,
+    "period": "monthly",
+    "tag": "popular",
+    "tagType": "popular",
+    "features": [
+      "Long-form content",
+      "SEO optimization",
+      "Brand voice control",
+      "Templates library"
+    ],
+    "icon": "jasper-icon.png"
+  },
+  {
+    "id": 8,
+    "name": "Synthesia",
+    "description": "AI video generator that creates videos with realistic avatars and voiceovers.",
+    "price": 30,
+    "period": "monthly",
+    "tag": "best seller",
+    "tagType": "best seller",
+    "features": [
+      "AI avatars",
+      "Text-to-video",
+      "Multiple languages",
+      "Voice cloning"
+    ],
+    "icon": "synthesia-icon.png"
+  }
+]

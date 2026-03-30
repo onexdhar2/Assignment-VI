@@ -2,7 +2,16 @@ import React from "react";
 import Navbar from "./components/Navbar";
 import Banner from "./components/Banner";
 import UserCounts from "./components/UserCounts";
+import PremiumTools from "./components/PremiumTools";
+import Card from "./ChildComponent/Card";
 
+// premium
+const getTools = async () => {
+  const res = await fetch("/model.json");
+  return res.json();
+};
+const getModelTools = getTools();
+// premium
 const App = () => {
   // navItems
   const navItems = ["Products", "Features", "Pricing", "Testimonials", "FAQ"];
@@ -21,6 +30,8 @@ const App = () => {
       <Navbar items={navItems} />
       <Banner />
       <UserCounts userCounts={userCounts} />
+      <PremiumTools getTools={getModelTools} />
+      <Card/>
     </>
   );
 };
