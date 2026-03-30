@@ -1,10 +1,10 @@
-import React, { use, useState } from "react";
+import React, { use } from "react";
 import ToolCard from "../ChildComponent/ToolCard";
 
-const PremiumTools = ({ getTools }) => {
+const PremiumTools = ({ getTools, carts, setCarts }) => {
   const tools = use(getTools);
-  console.log(tools);
-  
+  // console.log(tools);
+
   return (
     <section className="mt-10 mb-10">
       <h3 className="text-center text-[#101727] text-4xl font-bold ">
@@ -15,12 +15,17 @@ const PremiumTools = ({ getTools }) => {
         designedto boost your productivity and creativity.
       </p>
       <div className="btnPremium flex justify-center gap-5 mt-10">
-        <button className="btn btn-active btn-primary">Products</button>
-        <button className="btn btn-active">Cart</button>
+        {/* <button className="btn btn-active btn-primary">Products</button>
+        <button className="btn btn-active">Cart</button> */}
       </div>
       <div className=" grid grid-cols-3">
         {tools.map((tool, toolIndex) => (
-          <ToolCard tool={tool}key={toolIndex}/>
+          <ToolCard
+            tool={tool}
+            key={toolIndex}
+            carts={carts}
+            setCarts={setCarts}
+          />
         ))}
       </div>
     </section>

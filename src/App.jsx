@@ -15,10 +15,6 @@ const getModelTools = getTools();
 
 // ......................................................................
 const App = () => {
-  // card
-  const [activeTab, setActiveTab] = useState("model");
-  console.log(activeTab);
-  // card
   // navItems
   const navItems = ["Products", "Features", "Pricing", "Testimonials", "FAQ"];
   // navItems
@@ -30,6 +26,11 @@ const App = () => {
     { id: 3, userCount: "4.9", userTitle: "Rating" },
   ];
   // usercount
+  // card
+  const [activeTab, setActiveTab] = useState("model");
+  console.log(activeTab);
+  const [carts, setCarts] = useState([]);
+  // card
 
   return (
     <>
@@ -54,8 +55,14 @@ const App = () => {
           onClick={() => setActiveTab("cart")}
         />
       </div>
-      {activeTab === "model" && <PremiumTools getTools={getModelTools} />}
-      {activeTab === "cart" && <Card />}
+      {activeTab === "model" && (
+        <PremiumTools
+          getTools={getModelTools}
+          carts={carts}
+          setCarts={setCarts}
+        />
+      )}
+      {activeTab === "cart" && <Card carts={carts} />}
     </>
   );
 };
