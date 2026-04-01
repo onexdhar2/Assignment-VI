@@ -3,7 +3,6 @@ import ToolCard from "../ChildComponent/ToolCard";
 
 const PremiumTools = ({ getTools, carts, setCarts }) => {
   const tools = use(getTools);
-  // console.log(tools);
 
   return (
     <section className="mt-10 mb-10">
@@ -14,11 +13,7 @@ const PremiumTools = ({ getTools, carts, setCarts }) => {
         Choose from our curated collection of <br /> premium digital products
         designedto boost your productivity and creativity.
       </p>
-      <div className="btnPremium flex justify-center gap-5 mt-10">
-        {/* <button className="btn btn-active btn-primary">Products</button>
-        <button className="btn btn-active">Cart</button> */}
-      </div>
-      <div className=" grid grid-cols-3">
+      <div className=" grid grid-cols-3 gap-10 p-10">
         {tools.map((tool, toolIndex) => (
           <ToolCard
             tool={tool}

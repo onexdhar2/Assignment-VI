@@ -22,6 +22,8 @@ const Navbar = ({ items }) => {
         <a href="#">
           <SlHandbag />
         </a>
+        <button className="btn btn-soft">LogIn</button>
+        <button className="btn btn-soft bg-[#4F39F6] text-white">Get Started</button>
       </div>
     </nav>
   );
