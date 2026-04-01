@@ -12,7 +12,7 @@ const ToolCard = ({ tool, toolIndex, carts, setCarts }) => {
     <div>
       <div key={toolIndex} className="mt-10 card bg-base-200 shadow-md p-5">
         <div className="flex justify-between">
-          <img src={tool.icon} alt="image" />
+          <img className="rounded-4xl w-6 h-6" src={tool.icon} alt="image" />
           <p className="bg-[#FEF3C6] p-2 rounded-2xl uppercase  mt-4text-[#BB4D00]">
             {tool.tag}
           </p>

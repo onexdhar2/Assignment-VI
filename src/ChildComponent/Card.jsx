@@ -29,7 +29,7 @@ const Card = ({ carts, setCarts }) => {
           {carts.map((item) => (
             <div key={item.id}>
               <div className="flex justify-around">
-                <div className="cont">
+                <div className="count">
                   <h2 className="text-[#101727] font-semibold text-2xl mt-10">{item.name}</h2>
                   <p className="text-[#627382] text-[20px]">${item.price}</p>
                 </div>
@@ -46,7 +46,7 @@ const Card = ({ carts, setCarts }) => {
           <div className="total mt-10">
             <div className="totalPrice flex justify-around">
               <h2 className="mb-10 text-[#627382] text-[20px]">Total</h2>
-              <h2>${totalPrice}</h2>
+              <h2 className="text-2xl font-bold">${totalPrice}</h2>
             </div>
             <div className="flex justify-center">
               <button onClick={handlePayment} className="text-center btn btn-primary">

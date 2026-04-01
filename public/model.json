@@ -13,7 +13,7 @@
       "Conversation memory",
       "Multi-language support"
     ],
-    "icon": "https://commons.wikimedia.org/wiki/File:ChatGPT-Logo.png"
+    "icon": "writing_2327400 1.png"
   },
   {
     "id": 2,
@@ -29,7 +29,7 @@
       "Creative styles",
       "Discord integration"
     ],
-    "icon": "midjourney-icon.png"
+    "icon": "design-tool.png"
   },
   {
     "id": 3,
@@ -45,7 +45,7 @@
       "Plagiarism checker",
       "Writing suggestions"
     ],
-    "icon": "grammarly-icon.png"
+    "icon": "operation.png"
   },
   {
     "id": 4,
@@ -61,7 +61,7 @@
       "Notes organization",
       "Team collaboration"
     ],
-    "icon": "notion-icon.png"
+    "icon": "Play.png"
   },
   {
     "id": 5,
@@ -77,7 +77,7 @@
       "Social media content",
       "Email writing"
     ],
-    "icon": "copyai-icon.png"
+    "icon": "portfolio.png"
   },
   {
     "id": 6,
@@ -93,7 +93,7 @@
       "AI editing tools",
       "Real-time collaboration"
     ],
-    "icon": "runway-icon.png"
+    "icon": "social-media.png"
   },
   {
     "id": 7,
@@ -109,7 +109,7 @@
       "Brand voice control",
       "Templates library"
     ],
-    "icon": "jasper-icon.png"
+    "icon": "writing_2327400 1.png"
   },
   {
     "id": 8,
@@ -125,6 +125,6 @@
       "Multiple languages",
       "Voice cloning"
     ],
-    "icon": "synthesia-icon.png"
+    "icon": "portfolio.png"
   }
 ]

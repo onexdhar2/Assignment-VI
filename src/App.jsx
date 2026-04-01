@@ -34,19 +34,19 @@ const App = () => {
   const stepsCard = [
     {
       id: 1,
-      icon: "",
+      icon: "/user.png",
       title: "Create Account",
       des: "Sign up for free in seconds. No credit card required to get started.",
     },
     {
       id: 2,
-      icon: "",
+      icon: "/package.png",
       title: "Choose Products",
       des: "Browse our catalog and select the toolsthat fit your needs.",
     },
     {
       id: 3,
-      icon: "",
+      icon: "/rocket.png",
       title: "Start Creating",
       des: "Download and start using your premium tools immediately.",
     },
